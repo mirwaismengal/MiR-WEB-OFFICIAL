@@ -1,0 +1,1082 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+HTML {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    justify-content: space-around;
+    box-shadow: 0 0 15px rgb(204, 204, 204);
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.header .logo img {
+    width: 140px;
+}
+
+.header nav ul {
+    gap: 40px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    /* height: 50px; */
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    font-family: 'Nunito';
+    font-size: 14px;
+    color: black;
+}
+
+.header nav ul li a:hover {
+    color: blue;
+    transition: 0.3s all;
+}
+
+.header .burger-menu i {
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    gap: 50px;
+    display: none;
+}
+
+.header .log a {
+    text-decoration: none;
+    font-family: 'Nunito';
+    padding: 8px 20px;
+    text-align: center;
+    border-radius: 5px;
+    color:white;
+    letter-spacing: 0.5px;
+    padding-left: 30px;
+    background-color: red;
+}
+.header .log a:hover{
+    background-color: transparent;
+    color: black;
+    transition: 1s all;
+    border: 2px solid red;
+}
+
+.hero-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hero-section .main-section {
+    max-width: 1250px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.hero-section .main-section .left-s {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 25px;
+}
+
+.hero-section .main-section .left-s h2 {
+    font-size: 50px;
+    font-family: 'Nunito';
+}
+
+.hero-section .main-section .left-s h2 span {
+    color: brown;
+    font-size: 40px;
+}
+
+.hero-section .main-section .left-s .btn a {
+    text-decoration: none;
+    font-family: 'Nunito';
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero-section .main-section .left-s .btn a:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: 1s all;
+
+}
+
+.hero-section .main-section .right-s img {
+    width: 400px;
+}
+
+/* HERO-SCTION */
+.about {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+
+.about .about-me {
+    width: 98%;
+    /* border: 1px solid red; */
+    /* margin-top: 60px; */
+    margin: auto;
+    /* margin-left: 120px; */
+    box-shadow: 0 0 10px gray;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.about .about-me .right-a img {
+    width: 400px;
+}
+
+.about .about-me .left-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.about .about-me .left-a .aboutme span {
+    border: 1px solid red;
+    font-size: 30px;
+}
+
+.about .about-me .left-a .aboutme h3 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.about .about-me .left-a h2 {
+    font-size: 30px;
+    font-family: "Nunito";
+}
+
+.about .about-me .left-a p {
+    font-family: 'Nunito';
+}
+
+.about .about-me .left-a .btn {
+    display: flex;
+    /* width: 180px; */
+}
+
+.about .about-me .left-a .btn a {
+    padding: 10px 10px;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    font-family: 'Nunito';
+    background-color: brown;
+    color: white;
+    font-weight: 400;
+}
+
+.about .about-me .left-a .btn a:hover {
+    background-color: red;
+    transition: 1s all;
+}
+
+/* Services */
+.services {
+    width: 100%;
+    padding: 30px;
+    margin-top: 40px;
+    /* border: 2px solid green; */
+}
+
+.services .container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.services .container .upper-section h2 {
+    color: black;
+    font-family: 'Nunito';
+    font-size: 33px;
+    margin-left: 40px
+}
+
+.services .container .upper-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.services .container .upper-section p {
+    font-family: 'Nunito';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 40px;
+}
+
+.services .container .lower-section {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.services .container .lower-section .box {
+    padding: 20px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #0e0e0e;
+    box-shadow: 0 0 5px grey;
+    border-radius: 4px;
+    transition: .4s all;
+}
+
+.services .container .lower-section .box:hover {
+    background-color: rgb(192, 0, 96);
+}
+
+.services .container .lower-section .active-box {
+    background-color: rgb(192, 0, 96);
+}
+
+.services .container .lower-section .active-box:hover {
+    background-color: #0e0e0e;
+}
+
+.services .container .lower-section .box h3 {
+    font-family: 'Nunito';
+    color: white;
+
+}
+
+.services .container .lower-section .box p {
+    width: 80%;
+    text-align: center;
+    color: rgb(211, 211, 211);
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.services .container .lower-section .box .box-btn {
+    margin-top: 30px;
+}
+
+.services .container .lower-section .box .box-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito';
+}
+
+.services .container .lower-section .box .box-btn a:hover {
+    letter-spacing: 2px;
+    transition: 1s all;
+}
+
+#u-arrow {
+    position: fixed;
+    top: 90%;
+    right: 40px;
+    font-size: 30px;
+}
+
+.project {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.project .main-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    width: 85%;
+    margin: auto;
+    box-shadow: 0 0 8px;
+    padding: 30px;
+}
+
+.project .main-project .top-p {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project .main-project .top-p h2 {
+    font-family: Nunito;
+    font-size: 40px;
+
+}
+
+.project .main-project .top-p p {
+    font-family: Nunito;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.project .main-project .top-p .btn a {
+    padding: 10px 20px;
+    background-color: brown;
+    text-decoration: none;
+    font-family: Nunito;
+    color: white;
+    padding-top: 10px;
+}
+
+.project .main-project .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.project .main-project .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.project .main-project .nav ul li a {
+    color: black;
+    font-family: Nunito;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.project .main-project .nav .icons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.project .main-project .nav .icons i {
+    background-color: transparent;
+    box-sizing: 0 0 8px;
+}
+
+.project .main-project .nav .icons i:hover {
+    cursor: pointer;
+}
+
+/* contact start */
+/* contact-s end */
+.main-section {
+
+    width: 100%;
+    /* border: 1px solid red; */
+    padding-top: 50px;
+}
+
+.main-section .container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.main-section .container .uffer-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 60px;
+    background-color: rgb(67, 67, 180);
+    width: 100%;
+
+    /* height: 300px; */
+}
+
+.main-section .container .uffer-s .img img {
+    width: 190px;
+    justify-content: center;
+}
+
+.main-section .container .lower-s ul a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.main-section .container .lower-s {
+    /* margin-top: 0px; */
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px grey;
+    /* border: 1px solid red; */
+}
+
+.main-section .container .lower-s ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+/* contact end */
+/* footer section start */
+footer {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    background-color: rgb(48, 47, 47);
+}
+
+footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* width: 85%; */
+    display: flex;
+
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 30px;
+}
+
+footer .footer-container .foot-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-container .foot-1 h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: "Nunito";
+
+}
+
+footer .footer-container .foot-1 li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Nunito";
+}
+
+footer .footer-container .foot-1 li,
+a:hover {
+    color: red;
+    transition: .5s all;
+}
+
+footer .footer-container .foot-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+footer .footer-container .foot-2 h2 {
+    color: white;
+}
+
+footer .footer-container .foot-2 i {
+    color: white;
+}
+
+footer .footer-container .foot-2 .foot-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.foot-1 p {
+    color: white;
+}
+
+/* footer end */
+.experting {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    background-color: white;
+}
+
+.experting .container-ex {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 30px;
+}
+
+.experting .container-ex .leftt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.experting .container-ex .leftt h2 {
+    font-family: 'Nunito';
+    color: red;
+}
+
+.experting .container-ex .leftt p {
+    font-family: 'Nunito';
+    font-size: 14px;
+    width: 400px;
+}
+
+.experting .container-ex .rightt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experting .container-ex .rightt h2 {
+    font-family: 'Nunito';
+    color: red;
+}
+
+.experting .container-ex .rightt h6 {
+    font-size: 16px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+.experting .container-ex .rightt .gmail{
+    display: flex;
+    gap: 40px;
+}
+.experting .container-ex .rightt .gmail a{
+    color: black;
+    font-family: 'Nunito';
+    text-decoration: underline;
+font-weight: 500;    
+}
+/* encourages session start */
+.encourages{
+    width: 100%;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+background-color: white;}
+.encourages .main-en .logo h2{
+    padding-left: 80px;
+    font-family: 'Nunito';
+    color: red;
+    text-align: center;
+    padding: 20px;
+}
+.encourages .main-en .all-en{
+    /* border: 1px solid red; */
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content: center;
+align-items: center;
+padding: 30px;
+}
+.encourages .main-en .all-en .first{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 30px;
+    gap: 30px;
+}
+.encourages .main-en .all-en .first .img{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 10px;
+}
+.encourages .main-en .all-en .first .img .logoo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.encourages .main-en .all-en .first .img .logoo h3{
+    color: red;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+.encourages .main-en .all-en .first .img .logoo h4{
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+.encourages .main-en .all-en .par {
+    font-family: 'Nunito';
+}
+/* enourages end */
+.work{
+    width: 100%;
+    margin-top: 80px;
+    
+    /* box-shadow: 0 0 3px gray; */
+    /* border: 1px solid red; */
+}
+.work .main-work{
+    display: grid;
+     gap: 300px;
+    grid-auto-columns: 1fr 1fr;
+    display: flex;
+    width: 90%;
+    padding: 40px;
+    background-color: white;
+}
+.work .main-work .left-work{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    ;
+}
+.work .main-work .left-work h2{
+    font-family: 'Nunito';
+    color:black;
+    font-size: 40px;
+}
+.work .main-work .left-work p{
+    /* width: 400px; */
+    font-size: 15px;
+    font-family: 'nunito';
+}
+.work .main-work .right-work form{
+    display: flex;
+flex-direction: column;
+gap: 10px;
+background-color: white;
+}
+.work .main-work .right-work form input{
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    color: black;
+    outline: none;
+    /* background-color:red; */
+    /* border-radius: 7px; */
+}
+.work .main-work .right-work form input::placeholder{
+    color: black;
+}
+.work .main-work .right-work form textarea{
+    /* height: 40px; */
+    padding: 10px;
+    border: none;
+    border-bottom:2px solid gray;
+    /* background-color:red; */
+    /* border-radius: 7px; */
+    outline: none;
+    color: black
+}
+.work .main-work .right-work form textarea::placeholder{
+    color: black;
+    font-family: nunito;
+}
+.work .main-work .right-work form button{
+    height: 40px;
+background-color: blue;
+color: white;
+outline: none;
+border: none;
+border-radius: 7px;}
+/* skills start */
+.skills{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.skills .logo h2{
+    font-family: Nunito;
+    padding-top: 160px;
+    /* text-align: center; */
+margin-left: 40px;
+font-size: 40px;
+font-weight: 500;}
+.skills .container{
+    /* width: 1300px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+justify-content: center;
+align-items: center;
+gap: 40px;
+padding: 30px;}
+.skills .container .left .top-left{
+    display: flex;
+    gap: 80px;
+
+}
+.skills .container .left .top-left .left-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills .container .left .top-left .left-right h2{
+    font-family: Nunito;
+    font-weight: 400;
+}
+.skills .container .left .top-left  li{
+    font-family: 'Nunito';
+}
+.skills .container .left .top-left .right-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills .container .left .top-left .right-right h2{
+    font-family: Nunito;
+    font-weight: 400;
+}
+.skills .container .righ img{
+    /* width: 500px; */
+    height: 400px;
+}
+.portfolio{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+    /* background-color: rgb(204, 204, 204) */
+box-shadow: 0 0 5px rebeccapurple ;}
+.portfolio .main-p .logo{
+display: flex ;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 120px;
+gap: 10px;
+
+}
+.portfolio .main-p .logo h2{
+    font-family: Nunito;
+    font-size: 40px;
+    letter-spacing: 1px;
+
+}
+.portfolio .main-p .logo h5{
+    color: red;
+    font-family: Nunito;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+/* .portfolio end */
+.service-port{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.service-port .main-ser .top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-port .main-ser .top .logo h2{
+    font-family: Nunito;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.service-port .main-ser .top .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.service-port .main-ser .top .left li{
+    list-style-type: none ;
+    border-bottom: 2px solid gray;
+}
+.service-port .main-ser .top .left a{
+    color: black;
+font-weight: 609;}
+.service-port .main-ser .top .left a:hover{
+    color: red;
+    transition: 0.5 all;
+}
+.service-port .main-ser .top .burger-menu i{
+    display: none;
+}
+/* imgs start */
+.main-imgs{
+    width: 100%;
+
+}
+.main-imgs .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.main-imgs .main .imgs-top img{width: 400px;
+
+}
+.main-imgs .main .imgs-bottom img{width: 400px;
+
+}
+/* cotnact start */
+.main-contact{
+    width: 100%;    
+}
+.main-contact .contact-us{padding: 30px;}
+.main-contact .contact-us .left-con .logo h2{
+    /* text-align: center; */
+    padding: 20px;
+    font-family: Nunito;
+}
+.main-contact .contact-us .left-con form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+padding: 30px;}
+.main-contact .contact-us .left-con form textarea{
+    background-color:transparent;
+    padding: 10px;
+    border: none solid gray;
+
+    outline: none;
+}
+.main-contact .contact-us .left-con form .names{
+    display: flex;
+    gap: 10px;
+
+}
+.main-contact .contact-us .left-con form .names input{
+    width: 240px
+;height: 30px;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid gray;
+outline: none   ;}
+
+.main-contact .contact-us .left-con form input{
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid gray;
+outline: none;
+padding: 10px;background-color: transparent;}
+
+.main-contact .contact-us .left-con form button{
+    background-color: red;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+color: white;
+font-family: Nunito;
+text-align:  center;}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+    .header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .log a {
+        display: none;
+    }
+
+    .header .logo img {
+        width: 80px;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .header nav .log a {
+        padding-right: 60px;
+    }
+
+    .header .burger-menu i {
+        display: block;
+    }
+
+    .hero-section .main-section {
+        flex-direction: column;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .hero-section .main-section .left-s {
+        align-items: center;
+    }
+
+    .hero-section .main-section .left-s h2,
+    span {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .about .about-me {
+        box-shadow: none;
+        background-color: white;
+        gap: 20px;
+    }
+
+    .about .about-me .right-a img {
+        display: none;
+    }
+
+    .about .about-me .right-a h3,
+    h2,
+    p {
+        text-align: center;
+    }
+
+    .about .about-me .left-a .btn {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services .container .lower-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin-top: 30px;
+
+    }
+
+    .project .main-project .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    footer .footer-container .foot-1 h2 {
+        font-size: 20px;
+    }
+
+    footer .footer-container .foot-1 h2,
+    li,
+    a {
+        text-align: center;
+
+    }
+    .experting .container-ex{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .experting .container-ex .leftt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .experting .container-ex .rightt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+}
+.encourages .main-en .all-en{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.work .main-work{
+    display: grid;
+    grid-template-columns: 1fr;
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+}
+.skills .container .righ img{
+    display: none;
+}
+.skills .container .left .top-left{
+    display: flex;
+}
+.service-port .main-ser .top .left li a{
+    display: none;
+}
+.service-port .main-ser .top .burger-menu i{
+    display: block;
+}
+.service-port .main-ser .top .logo h2{
+text-align: center;
+}
+}
+
+@media (max-width:415px) {
+    .main-contact .contact-us .left-con form text-a
+
+
+
+}
+
+
+
+
+
+
+
+
+
